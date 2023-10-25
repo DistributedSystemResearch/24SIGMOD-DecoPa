@@ -332,14 +332,14 @@ def main():
 
     
     
-    wl = [AND(SEQ(PrimEvent('C'), PrimEvent('E'), PrimEvent('A')),PrimEvent('G'))] # google 1
-    wl = [AND(KL(PrimEvent('D')),PrimEvent('I'), PrimEvent('B'))] # google 2
-    wl = [SEQ(KL(PrimEvent('G')), PrimEvent('C'), PrimEvent('E'),PrimEvent('D'))] # google 2
+    #wl = [AND(SEQ(PrimEvent('C'), PrimEvent('E'), PrimEvent('A')),PrimEvent('G'))] # google 1
+    #wl = [AND(KL(PrimEvent('D')),PrimEvent('I'), PrimEvent('B'))] # google 2
+    #wl = [SEQ(KL(PrimEvent('G')), PrimEvent('C'), PrimEvent('E'),PrimEvent('D'))] # google 2
 
     
-    wl = [AND(PrimEvent('C'),PrimEvent('B'), PrimEvent('A'),PrimEvent('D'),PrimEvent('H'))] #citibike 1
-    wl = [AND(PrimEvent('C'),PrimEvent('E'), PrimEvent('G'),PrimEvent('D'))] #citibike 2
-    wl = [AND(PrimEvent('E'), KL(PrimEvent('D')),PrimEvent('A'),PrimEvent('H'))]  #citibike 3
+    #wl = [AND(PrimEvent('C'),PrimEvent('B'), PrimEvent('A'),PrimEvent('D'),PrimEvent('H'))] #citibike 1
+    #wl = [AND(PrimEvent('C'),PrimEvent('E'), PrimEvent('G'),PrimEvent('D'))] #citibike 2
+    #wl = [AND(PrimEvent('E'), KL(PrimEvent('D')),PrimEvent('A'),PrimEvent('H'))]  #citibike 3
  
     
     qwlOk = 1

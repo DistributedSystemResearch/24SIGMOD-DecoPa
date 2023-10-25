@@ -1,0 +1,24 @@
+{
+  "forwarding": {
+    "send_mode": "broadcast",
+    "recipient": [1],
+    "connections_to_establish": [0],
+    "node_id": 0
+  },
+  "processing": {
+    "predicate_checks": 1,
+    "query_length":  2,
+    "query_name": "SEQ(A,C)",
+    "output_selection": [
+      "A", "C"
+    ],
+    "input_1": "A",
+    "input_2": "C",
+    "selectivity": 1.0,
+    "sequence_constraints": [["A","C"]],
+    "id_constraints": [],
+    "time_window_size": 60,
+    "is_negated":0,
+    "context": []
+  }
+}

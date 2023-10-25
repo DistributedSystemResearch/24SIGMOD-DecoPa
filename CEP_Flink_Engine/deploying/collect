@@ -1,0 +1,7 @@
+#!/bin/bash
+source common.sh
+if (( $# > 2 )); then
+collect_results "$@"
+else
+echo "Usage: collect CLUSTER_ID N_NODES DIRECTORY - collect results into DIRECTORY"
+fi

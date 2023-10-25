@@ -1,0 +1,47 @@
+---
+- name: Initial setup of pis
+  hosts: paramuno
+  remote_user: root
+  tasks: 
+  - name: Set hostname to ansible hostname
+    command: hostnamectl set-hostname {{ inventory_hostname }}
+  
+  - name: Ensure own hostname is in /etc/hosts bound to ipv6localhost
+    ansible.builtin.lineinfile:
+      path: /etc/hosts
+      regexp: '^::1 {{ ansible_hostname }}'
+      line: '::1 {{ ansible_hostname }}'
+      state: present
+  
+  - name: Ensure own hostname is in /etc/hosts bound to ipv4 localhost
+    ansible.builtin.lineinfile:
+      path: /etc/hosts
+      regexp: '^127.0.0.1 {{ ansible_hostname }}'
+      line: '127.0.0.1 {{ ansible_hostname }}'
+      state: present
+
+  - name: Ensure installation of jdk and other 
+    ansible.builtin.apt:
+      name: openjdk-8-jdk, net-tools, vim, lsof
+      state: present
+
+  - name: Create sm24 folder
+    ansible.builtin.file:
+      path: /root/sm24
+      state: directory
+      owner: root
+      group: root
+
+  - name: Update jar
+    ansible.builtin.copy:
+      src: "{{ playbook_dir }}/../../java-cep/target/beispiel-1.0-SNAPSHOT.jar"
+      dest: /root/sm24/cep-node.jar
+      owner: root
+      group: root
+  
+  - name: Update python
+    ansible.builtin.copy:
+      src: "{{ playbook_dir }}/../../python/send_eventstream.py"
+      dest: /root/sm24/
+      owner: root
+      group: root

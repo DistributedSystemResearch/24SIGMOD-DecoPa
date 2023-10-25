@@ -387,7 +387,6 @@ def getBestLatency(query, projection, mylist):
                     myParallels += combiDict[ingredient][1]
                 combiDict[projection] = (mycombi,list(set(myParallels)),0,mylatency[0])
             else:
-                print("UHH YEAH 1",projection,numberProjections(mycombi, projection))
                 mylatency = assignstateCombiDict(projection)
                 myParallels = [mylatency[2]] 
                 
@@ -402,28 +401,7 @@ def getBestLatency(query, projection, mylist):
                 #print("huhU", projection, mylatency[0])
                 combiDict[projection] = (mylatency[1],list(set(myParallels)),0,mylatency[0])    
                 
-            
-            
-# =============================================================================
-#         elif myProjs:     #if settoproj(rest, projection) in mylist: #rest can also be included in  a proj in mylist         
-#             cheapestRestProj =  sorted(myProjs, key= lambda x: totalRate(x))[0]
-#             mycombi = [longest_element] + [cheapestRestProj]
-#             if numberProjections(mycombi, projection)<=ressources: #myRessources
-#                 
-#                 mylatency = getLatency_new(projection, mycombi, query,0)
-#                 myParallels = [mylatency[1]]
-#                 for ingredient in [x for x in mycombi if len(x)>1]:
-#                     myParallels += combiDict[ingredient][1]
-#             else:
-#                 print("UHH YEAH 2",projection,numberProjections(mycombi, projection))
-#                 mylatency = assignstateCombiDict(projection)
-#                 myParallels = [mylatency[2]] 
-#                 mycombi = mylatency[3]
-#             
-#             #TODO: if len unfoldcombi < ressources, especially important for complete query!     else other case
-#             combiDict[projection] = (mycombi,list(set(myParallels)),0,mylatency[0])            
-#         
-# =============================================================================
+          
         
         else: # rest yields no beneficial projection and is not only a prim event
                 print("This is the case where there is no valid combination, as there are not enough beneficial projections")
@@ -1079,8 +1057,8 @@ def main():
     available_ressources = ressources - (sum([len(x.leafs()) for x in wl]) - len(wl))
     
     # set for server / pi experiments accordingly -> as long as a comparison takes 1ms, compLimit is fix
-    rateLimit = 2400
-    compLimit = 500000/tw
+    rateLimit = 6000
+    compLimit = 60000/tw
     
     singleRate = 0
     singleComps = 0
@@ -1088,8 +1066,7 @@ def main():
     portions = {query: round((state_parallel_query_latencies[query]/sum(list(state_parallel_query_latencies.values())))*available_ressources)  for query in wl} # use portion based on stateparallel estimate, to estimate available ressources per query
     print(portions)
     
-    if not parallel:
-        print("HELLLLLLLLLLLLLLLLLLLOOOOOOOOOOOE SUPER FASATTTTTSTTSTST")
+
     
     # if available_resources > 0 
    # for query in sorted(wl, key = (lambda x: len(projsPerQuery[x])), reverse=True): #start with queries having the least projections, try other sortings...

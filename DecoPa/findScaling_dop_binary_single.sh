@@ -9,12 +9,12 @@ cd code/
 # for dop 5 10 15 20 dop x
 
 LC_NUMERIC=C
-for nw in {1..10}; do
+for nw in {1..1}; do
 	scaling=1
 	python generate_selectivity.py
 	python generate_network.py 1 "$scaling" #new network generated and must be saved to pickle 
 
-		for par in 5 10 15 20;do			
+		for par in 6 10 15 20;do			
 
 			dir_name="${nw}_${par}"
 

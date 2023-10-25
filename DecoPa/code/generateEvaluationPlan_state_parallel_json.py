@@ -8,7 +8,7 @@ Created on Wed Feb 15 11:19:49 2023
 import sys
 import time 
 import pickle
-from estimateLatency import *
+from generate_projections import *
 import random as rd
 import json
 

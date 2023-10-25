@@ -100,10 +100,10 @@ def main():
     node_event_ratio = 1.0
     num_eventtypes = 6
     eventskew = 1.1
-    toFile = True
+    toFile = False
     swaps = 0   
     scaling = 10
-    miau = True
+    miau = False
     kleeneOk = 1
 
       
@@ -142,11 +142,12 @@ def main():
     f.write(str(kleeneOk)) 
     f.close()    
   
-    eventrates = [5002.8, 4761.0, 575.6, 190.8, 2849.6, 1265.0, 0.64, 0.01, 0.22080000000000002] # Google First 48h        
+   # eventrates = [5002.8, 4761.0, 575.6, 190.8, 2849.6, 1265.0, 0.64, 0.01, 0.22080000000000002] # Google First 48h        
     #eventrates = [4.5, 348, 2854, 35, 3120,20833,6,244,5950] # Citibike
-    totalEventrates = eventrates
+    #totalEventrates = eventrates
 
     print(totalEventrates)
+    eventrates = totalEventrates
     assignment = {}
     
     for etype in range(len(eventrates)):

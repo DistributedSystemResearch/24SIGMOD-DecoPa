@@ -1,0 +1,172 @@
+Host *
+StrictHostKeyChecking accept-new
+
+#Mythic beasts
+Host paramuno*
+User root
+IdentitiesOnly yes
+IdentityFile ~/.ssh/sm24user
+
+Host paramuno0
+    user root
+    port 5250
+    hostname ssh.paramuno0.hostedpi.com
+Host paramuno1
+    user root
+    port 5371
+    hostname ssh.paramuno1.hostedpi.com
+Host paramuno2
+    user root
+    port 5276
+    hostname ssh.paramuno2.hostedpi.com
+Host paramuno3
+    user root
+    port 5288
+    hostname ssh.paramuno3.hostedpi.com
+Host paramuno4
+    user root
+    port 5233
+    hostname ssh.paramuno4.hostedpi.com
+Host paramuno5
+    user root
+    port 5314
+    hostname ssh.paramuno5.hostedpi.com
+Host paramuno6
+    user root
+    port 5299
+    hostname ssh.paramuno6.hostedpi.com
+Host paramuno7
+    user root
+    port 5251
+    hostname ssh.paramuno7.hostedpi.com
+Host paramuno8
+    user root
+    port 5322
+    hostname ssh.paramuno8.hostedpi.com
+Host paramuno9
+    user root
+    port 5285
+    hostname ssh.paramuno9.hostedpi.com
+Host paramuno10
+    user root
+    port 5301
+    hostname ssh.paramuno10.hostedpi.com
+Host paramuno11
+    user root
+    port 5216
+    hostname ssh.paramuno11.hostedpi.com
+Host paramuno12
+    user root
+    port 5369
+    hostname ssh.paramuno12.hostedpi.com
+Host paramuno13
+    user root
+    port 5336
+    hostname ssh.paramuno13.hostedpi.com
+Host paramuno14
+    user root
+    port 5196
+    hostname ssh.paramuno14.hostedpi.com
+Host paramuno15
+    user root
+    port 5193
+    hostname ssh.paramuno15.hostedpi.com
+Host paramuno16
+    user root
+    port 5220
+    hostname ssh.paramuno16.hostedpi.com
+Host paramuno17
+    user root
+    port 5381
+    hostname ssh.paramuno17.hostedpi.com
+Host paramuno18
+    user root
+    port 5335
+    hostname ssh.paramuno18.hostedpi.com
+Host paramuno19
+    user root
+    port 5256
+    hostname ssh.paramuno19.hostedpi.com
+Host paramuno20
+    user root
+    port 5329
+    hostname ssh.paramuno20.hostedpi.com
+Host paramuno21
+    user root
+    port 5296
+    hostname ssh.paramuno21.hostedpi.com
+Host paramuno22
+    user root
+    port 5367
+    hostname ssh.paramuno22.hostedpi.com
+Host paramuno23
+    user root
+    port 5207
+    hostname ssh.paramuno23.hostedpi.com
+Host paramuno24
+    user root
+    port 5326
+    hostname ssh.paramuno24.hostedpi.com
+Host paramuno25
+    user root
+    port 5382
+    hostname ssh.paramuno25.hostedpi.com
+Host paramuno26
+    user root
+    port 5246
+    hostname ssh.paramuno26.hostedpi.com
+Host paramuno27
+    user root
+    port 5351
+    hostname ssh.paramuno27.hostedpi.com
+Host paramuno28
+    user root
+    port 5297
+    hostname ssh.paramuno28.hostedpi.com
+Host paramuno29
+    user root
+    port 5345
+    hostname ssh.paramuno29.hostedpi.com
+Host paramuno30
+    user root
+    port 5213
+    hostname ssh.paramuno30.hostedpi.com
+Host paramuno31
+    user root
+    port 5230
+    hostname ssh.paramuno31.hostedpi.com
+Host paramuno32
+    user root
+    port 5318
+    hostname ssh.paramuno32.hostedpi.com
+Host paramuno33
+    user root
+    port 5331
+    hostname ssh.paramuno33.hostedpi.com
+Host paramuno34
+    user root
+    port 5320
+    hostname ssh.paramuno34.hostedpi.com
+Host paramuno35
+    user root
+    port 5234
+    hostname ssh.paramuno35.hostedpi.com
+Host paramuno36
+    user root
+    port 5290
+    hostname ssh.paramuno36.hostedpi.com
+Host paramuno37
+    user root
+    port 5228
+    hostname ssh.paramuno37.hostedpi.com
+Host paramuno38
+    user root
+    port 5342
+    hostname ssh.paramuno38.hostedpi.com
+Host paramuno39
+    user root
+    port 5240
+    hostname ssh.paramuno39.hostedpi.com
+
+
+

@@ -1,0 +1,25 @@
+{
+  "forwarding": {
+    "send_mode": "broadcast",
+    "recipient": [],
+    "connections_to_establish": [0],
+    "node_id": 0
+  },
+  "processing": {
+    "predicate_checks": 1,
+    "query_length":  1,
+    "query_name": "AND(A,B)",
+    "output_selection": [
+      "A", "B"
+    ],
+    "input_1": "A",
+    "input_2": "B",
+    "selectivity": 0.1,
+    "sequence_constraints": [],
+    "id_constraints": [],
+    "time_window_size": 60,
+    "is_negated":0,
+    "kleene_type":0,	
+    "context": []
+  }
+}
