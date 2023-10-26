@@ -5,7 +5,7 @@
 This repository contains the implementation of algorithms for the construction of DecoPa plans, tools for the generation of input streams and a Flink-based implementation for parallel CEP matching.
 
 
-#### INEv
+#### DecoPa
 
 The directory `DecoPa` contains the implementation of our algorithms and some of the scripts used to conduct the experiments presented in the paper.
 Moreover, the subdirectory `DecoPa/poisson-event-gen` contains the tools to generate local input streams for a set of processing units as they would be provided by a shuffler, based on a given DecoPa plan.
