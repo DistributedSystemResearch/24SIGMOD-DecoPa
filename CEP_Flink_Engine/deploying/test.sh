@@ -1,4 +1,4 @@
-DIRECTORY=/home/samira/Diss/code/sigmod24-flink/deploying/example_inputs/14_4/degree_parallelism/10
+DIRECTORY=
 
 # Loop over all folders in the directory
 for FOLDER in "$DIRECTORY"/*/; do
