@@ -16,6 +16,6 @@ The script `./findScaling_dop_binary_single.sh` can be used, to generate DecoPa 
 
 #### CEP_Flink_Engine
 
-The directory `CEP_Flink_Engine` contains the implementation of a Flink-based implementation for parallel CEP matching. The directory `CEP\_Flink\_Engine/deploying/example\_inputs` contains the DecoPa plans and local streams used for the real-world data experiments. The directory `deploying` contains the scripts to deploy a disseminated DecoPa plan to a set of processing units.
+The directory `CEP_Flink_Engine` contains the implementation of a Flink-based implementation for parallel CEP matching. The directory `CEP\_Flink\_Engine/deploying/example\_inputs` contains the DecoPa plans and local streams used for the real-world data experiments. The directory `deploying` contains the scripts to deploy a disseminated DecoPa plan on a set of processing units.
 
 
